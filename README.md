@@ -10,9 +10,9 @@ Neovim user/Unix ricer/Go Learner.
 # Tech Stack
 ![c++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![vulkan](https://img.shields.io/badge/vulkan-%23AC162C.svg?style=for-the-badge&logo=vulkan&logoColor=white) ![opengl](https://img.shields.io/badge/opengl-%235586A4.svg?style=for-the-badge&logo=opengl&logoColor=white) ![nix](https://img.shields.io/badge/nix-%235277C3.svg?style=for-the-badge&logo=nixos&logoColor=white) ![lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white) ![neovim](https://img.shields.io/badge/neovim-%2357A143.svg?style=for-the-badge&logo=neovim&logoColor=white) ![typescript](https://img.shields.io/badge/typescript-%233178C6.svg?style=for-the-badge&logo=typescript&logoColor=white) ![go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) ![python](https://img.shields.io/badge/python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white) ![torch](https://img.shields.io/badge/torch-%23EE4C2C.svg?style=for-the-badge&logo=pytorch&logoColor=white) 
 # GitHub Stats
-![](https://github-readme-stats.vercel.app/api?username=tsssni&theme=prussian&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=tsssni&theme=prussian&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=tsssni&theme=prussian&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+![](https://github-readme-stats.vercel.app/api?username=tsssni&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=tsssni&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=tsssni&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 ---
-[![](https://visitcount.itsvg.in/api?id=tsssni&icon=0&color=10)](https://visitcount.itsvg.in)
+[![](https://visitcount.itsvg.in/api?id=tsssni&icon=0&color=12)](https://visitcount.itsvg.in)
