@@ -1,3 +1,5 @@
+![plana](plana.gif)
+
 # About
 A software engineering master student from State Key Lab of CAD & CG, Zhejiang University, working with Prof [Rui Wang](http://www.cad.zju.edu.cn/home/rwang/).
 
