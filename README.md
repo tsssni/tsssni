@@ -1,19 +1,66 @@
-![plana](plana.gif)
+![plana](./plana.gif)
 
-From [五臓六腑七](https://x.com/5zou6pu7/status/1778713263058063412)
+GIF from [五臓六腑七](https://x.com/5zou6pu7/status/1778713263058063412)
 
-# About
-A software engineering master student from State Key Lab of CAD & CG, Zhejiang University, working with Prof [Rui Wang](http://www.cad.zju.edu.cn/home/rwang/).
+# tsssni.nix
 
-Focusing on modern C++ and graphics.
+```nix
+{
+pkgs
+, lib
+, config
+, ...
+}:
+{
+  options.tsssni = let
+    mkBool = desc: lib.mkEnableOption ("whether tsssni is using " + desc);
+  in {
+    systemSupport = mkBool "current system";
+    languagesSupport = mkBool "languages supported by launched treesitters";
+    editorSupport = mkBool "specific code editor";
+    riceSupport = mkBool "specific programs for unix ricing";
+    graphicsSupport = let
+      apisOptions = apiLists: lib.mapListsToAttrs apiLists (api: mkBool api);
+    in {}
+      ++ (apisOptions [ "vulkan" "opengl" "d3d12" "d3d11" "d3d9" "metal" ]);
+  };
 
-Loving Nix & NixOS declaratively.
+  config.tsssni = let
+    anyPackageIn = pkgsList: list: (builtins.any (p: builtins.elem p list) pkgsList);
+    anyEnabled = attrsList: (builtins.any (attrs: attrs.enable) attrsList);
+  in with pkgs; {
+    systemSupport = let system = stdenv.hostPlatform; in false
+      || (system.isLinux && system.isx86_64)
+      || (system.isDarwin && system.isAaarch64);
 
-Nixvim user/Unix ricer/JRPG maker.
+    languageSupport = anyPackageIn (with vimPlugins.nvim-treesitter.builtGrammars; [
+      c
+      cmake
+      cpp
+      glsl
+      hlsl
+      nix
+    ]) config.nixvim.plugins.treesittter.grammarPackages;
 
-# Tech Stack
-![c++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![vulkan](https://img.shields.io/badge/vulkan-%23AC162C.svg?style=for-the-badge&logo=vulkan&logoColor=white) ![opengl](https://img.shields.io/badge/opengl-%235586A4.svg?style=for-the-badge&logo=opengl&logoColor=white) ![nix](https://img.shields.io/badge/nix-%235277C3.svg?style=for-the-badge&logo=nixos&logoColor=white) ![neovim](https://img.shields.io/badge/neovim-%2357A143.svg?style=for-the-badge&logo=neovim&logoColor=white) ![lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
+    graphicsSupport = {
+      vulkan = true;
+      opengl = true;
+      d3d12 = true;
+    };
 
-# GitHub Stats
-![](https://github-readme-stats.vercel.app/api?username=tsssni&title_color=ff0055&text_color=f5c1e9&icon_color=00ffc8&bg_color=120b10&hide_border=false&show_icons=true&include_all_commits=false&count_private=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=tsssni&title_color=ff0055&text_color=f5c1e9&icon_color=00ffc8&bg_color=120b10&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+    editorSupport = config.nixvim.defaultEditor;
+
+    riceSupport = anyEnabled (with config.programs; [  
+      hyprland
+      ags
+    ]);
+  };
+}
+```
+
+# tsssni.github-stats
+
+
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=tsssni&title_color=ff0055&text_color=f5c1e9&icon_color=00ffc8&bg_color=120b10&show_icons=true&layout=compact&hide_title=true&hide_border=true&langs_count=20&count_private=false)
+
+![](https://github-readme-stats.vercel.app/api?username=tsssni&title_color=ff0055&text_color=f5c1e9&icon_color=00ffc8&bg_color=120b10&show_icons=true&hide_title=true&hide_border=true&include_all_commits=false&count_private=false)
