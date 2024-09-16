@@ -1,10 +1,3 @@
-![plana](./plana.gif)
-
-GIF from [五臓六腑七](https://x.com/5zou6pu7/status/1778713263058063412)
-
-# tsssni.nix
-
-```nix
 {
 pkgs
 , lib
@@ -59,11 +52,3 @@ in {
       ]);
     });
 }
-```
-
-# tsssni.github-stats
-
-
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=tsssni&title_color=ff0055&text_color=f5c1e9&icon_color=00ffc8&bg_color=120b10&show_icons=true&layout=compact&hide_title=true&hide_border=true&langs_count=20&count_private=false)
-
-![](https://github-readme-stats.vercel.app/api?username=tsssni&title_color=ff0055&text_color=f5c1e9&icon_color=00ffc8&bg_color=120b10&show_icons=true&hide_title=true&hide_border=true&include_all_commits=false&count_private=false)
