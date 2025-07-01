@@ -85,6 +85,6 @@ in
 # tsssni.github-stats
 
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=tsssni&title_color=ff0055&text_color=f5c1e9&icon_color=00ffc8&bg_color=120b10&show_icons=true&layout=compact&hide_title=true&hide_border=true&langs_count=20&count_private=false)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=tsssni&title_color=645e8c&text_color=bebad9&icon_color=f26dab&border_color=645e8c&bg_color=303446&show_icons=true&layout=compact&hide_title=true&hide_border=false&langs_count=20&count_private=false)
 
-![](https://github-readme-stats.vercel.app/api?username=tsssni&title_color=ff0055&text_color=f5c1e9&icon_color=00ffc8&bg_color=120b10&show_icons=true&hide_title=true&hide_border=true&include_all_commits=false&count_private=false)
+![](https://github-readme-stats.vercel.app/api?username=tsssni&title_color=645e8c&text_color=bebad9&icon_color=f26dab&border_color=645e8c&bg_color=303446&show_icons=true&hide_title=true&hide_border=false&include_all_commits=false&count_private=false)
